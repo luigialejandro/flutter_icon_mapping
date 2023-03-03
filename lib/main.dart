@@ -1,23 +1,8 @@
 import 'package:flutter/material.dart';
-
-import 'package:fluttericon/brandico_icons.dart';
 import 'package:fluttericon/elusive_icons.dart';
-import 'package:fluttericon/entypo_icons.dart';
 import 'package:fluttericon/font_awesome5_icons.dart';
 import 'package:fluttericon/font_awesome_icons.dart';
-import 'package:fluttericon/fontelico_icons.dart';
-import 'package:fluttericon/iconic_icons.dart';
-import 'package:fluttericon/linearicons_free_icons.dart';
 import 'package:fluttericon/linecons_icons.dart';
-import 'package:fluttericon/maki_icons.dart';
-import 'package:fluttericon/meteocons_icons.dart';
-import 'package:fluttericon/mfg_labs_icons.dart';
-import 'package:fluttericon/modern_pictograms_icons.dart';
-import 'package:fluttericon/octicons_icons.dart';
-import 'package:fluttericon/rpg_awesome_icons.dart';
-import 'package:fluttericon/typicons_icons.dart';
-import 'package:fluttericon/web_symbols_icons.dart';
-import 'package:fluttericon/zocial_icons.dart';
 
 void main() {
   runApp(const MyApp());
@@ -49,111 +34,114 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  final double iconSize = 46;
+  final Color iconColor = Colors.white;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text(
+          title: const Text(
             'Galería de iconos',
             style: TextStyle(fontSize: 24),
           ),
           centerTitle: true,
-          backgroundColor: Color(0xff731F3E),
+          backgroundColor: const Color(0xff731F3E),
         ),
         body: iconsGridBody());
   }
 
   iconsGridBody() {
     List<Icon> iconics = [
-      Icon(Icons.menu, size: 46, color: Colors.white),
-      Icon(Icons.home, size: 46, color: Colors.white),
-      Icon(Icons.assignment_ind_rounded, size: 46, color: Colors.white),
-      Icon(Icons.markunread_mailbox_rounded, size: 46, color: Colors.white),
-      Icon(Icons.date_range_rounded, size: 46, color: Colors.white),
-      Icon(Icons.search, size: 46, color: Colors.white),
-      Icon(Icons.notifications_active_rounded, size: 46, color: Colors.white),
-      Icon(Icons.call, size: 46, color: Colors.white),
-      Icon(Icons.document_scanner_rounded, size: 46, color: Colors.white),
-      Icon(Icons.list_alt, size: 46, color: Colors.white),
-      Icon(Icons.featured_play_list_outlined, size: 46, color: Colors.white),
-      Icon(Icons.other_houses_outlined, size: 46, color: Colors.white),
-      Icon(Icons.contact_phone, size: 46, color: Colors.white),
-      Icon(Elusive.group, size: 46, color: Colors.white),
-      Icon(FontAwesome5.hand_holding_usd, size: 46, color: Colors.white),
-      Icon(Icons.task_alt_rounded, size: 46, color: Colors.white),
-      Icon(Icons.password, size: 46, color: Colors.white),
-      Icon(Icons.screen_lock_portrait, size: 46, color: Colors.white),
-      Icon(FontAwesome.key, size: 46, color: Colors.white),
-      Icon(Elusive.folder_open, size: 46, color: Colors.white),
-      Icon(Icons.security_outlined, size: 46, color: Colors.white),
-      Icon(Icons.face, size: 46, color: Colors.white),
-      Icon(Icons.event, size: 46, color: Colors.white),
-      Icon(Icons.open_in_new_outlined, size: 46, color: Colors.white),
-      Icon(Icons.help_outline_sharp, size: 46, color: Colors.white),
-      Icon(Icons.chat_bubble_outline, size: 46, color: Colors.white),
-      Icon(Icons.qr_code_scanner, size: 46, color: Colors.white),
-      Icon(Icons.smart_screen, size: 46, color: Colors.white),
-      Icon(Linecons.doc, size: 46, color: Colors.white),
-      Icon(Icons.bar_chart_outlined, size: 46, color: Colors.white),
-      Icon(Icons.priority_high_outlined, size: 46, color: Colors.white),
-      Icon(Icons.apps, size: 46, color: Colors.white),
-      Icon(Icons.star_outline_outlined, size: 46, color: Colors.white),
-      Icon(Icons.article_outlined, size: 46, color: Colors.white),
-      Icon(Icons.logout_outlined, size: 46, color: Colors.white),
-      Icon(Icons.markunread_mailbox_outlined, size: 46, color: Colors.white),
-      Icon(FontAwesome5.dollar_sign, size: 46, color: Colors.white),
-      Icon(FontAwesome5.hourglass_end, size: 46, color: Colors.white),
-      Icon(FontAwesome5.hourglass_half, size: 46, color: Colors.white),
-      Icon(FontAwesome5.shopping_basket, size: 46, color: Colors.white),
-      Icon(FontAwesome5.landmark, size: 46, color: Colors.white),
-      Icon(FontAwesome5.calendar_check, size: 46, color: Colors.white),
-      Icon(FontAwesome5.calendar_alt, size: 46, color: Colors.white),
-      Icon(FontAwesome5.clock, size: 46, color: Colors.white),
-      Icon(Icons.share, size: 46, color: Colors.white),
-      Icon(Icons.more_vert, size: 46, color: Colors.white),
-      Icon(Icons.arrow_back, size: 46, color: Colors.white),
-      Icon(Icons.flashlight_off, size: 46, color: Colors.white),
-      Icon(Icons.flashlight_on, size: 46, color: Colors.white),
-      Icon(Icons.clear, size: 46, color: Colors.white),
-      Icon(Icons.fingerprint, size: 46, color: Colors.white),
-      Icon(Icons.fingerprint_rounded, size: 46, color: Colors.white),
-      Icon(Icons.face_rounded, size: 46, color: Colors.white),
-      Icon(Icons.disabled_by_default_outlined, size: 46, color: Colors.white),
-      Icon(Icons.cancel, size: 46, color: Colors.white),
-      Icon(Icons.delete, size: 46, color: Colors.white),
-      Icon(Icons.photo_camera_front, size: 46, color: Colors.white),
-      Icon(Icons.play_arrow, size: 46, color: Colors.white),
-      Icon(Icons.dvr_sharp, size: 46, color: Colors.white),
-      Icon(Icons.people_alt_outlined, size: 46, color: Colors.white),
-      Icon(Icons.text_snippet_sharp, size: 46, color: Colors.white),
-      Icon(Icons.lock, size: 46, color: Colors.white),
-      Icon(Icons.aod_outlined, size: 46, color: Colors.white),
-      Icon(Icons.videocam_outlined, size: 46, color: Colors.white),
-      Icon(Icons.arrow_forward, size: 46, color: Colors.white),
-      Icon(Icons.check_box_outlined, size: 46, color: Colors.white),
-      Icon(Icons.refresh, size: 46, color: Colors.white),
-      Icon(Icons.camera_alt, size: 46, color: Colors.white),
-      Icon(Icons.file_present, size: 46, color: Colors.white),
-      Icon(Icons.repeat, size: 46, color: Colors.white),
-      Icon(Icons.upload_file, size: 46, color: Colors.white),
-      Icon(Icons.format_quote, size: 46, color: Colors.white),
-      Icon(Icons.stop, size: 46, color: Colors.white),
-      Icon(Icons.circle, size: 46, color: Colors.white),
-      Icon(Icons.pause, size: 46, color: Colors.white),
-      Icon(Icons.replay, size: 46, color: Colors.white),
-      Icon(Icons.mode_outlined, size: 46, color: Colors.white),
-      Icon(Icons.stay_current_portrait, size: 46, color: Colors.white),
-      Icon(Icons.description_outlined, size: 46, color: Colors.white),
-      Icon(Icons.download, size: 46, color: Colors.white),
-      Icon(Icons.done, size: 46, color: Colors.white),
-      Icon(Icons.star, size: 46, color: Colors.white),
-      Icon(Icons.mark_email_read_outlined, size: 46, color: Colors.white),
-      Icon(Icons.check, size: 46, color: Colors.white),
+      institutionalAppIcon(Icons.menu),
+      institutionalAppIcon(Icons.home),
+      institutionalAppIcon(Icons.assignment_ind_rounded),
+      institutionalAppIcon(Icons.markunread_mailbox_rounded),
+      institutionalAppIcon(Icons.date_range_rounded),
+      institutionalAppIcon(Icons.search),
+      institutionalAppIcon(Icons.notifications_active_rounded),
+      institutionalAppIcon(Icons.call),
+      institutionalAppIcon(Icons.document_scanner_rounded),
+      institutionalAppIcon(Icons.list_alt),
+      institutionalAppIcon(Icons.featured_play_list_outlined),
+      institutionalAppIcon(Icons.other_houses_outlined),
+      institutionalAppIcon(Icons.contact_phone),
+      institutionalAppIcon(Elusive.group),
+      institutionalAppIcon(FontAwesome5.hand_holding_usd),
+      institutionalAppIcon(Icons.task_alt_rounded),
+      institutionalAppIcon(Icons.password),
+      institutionalAppIcon(Icons.screen_lock_portrait),
+      institutionalAppIcon(FontAwesome.key),
+      institutionalAppIcon(Elusive.folder_open),
+      institutionalAppIcon(Icons.security_outlined),
+      institutionalAppIcon(Icons.face),
+      institutionalAppIcon(Icons.event),
+      institutionalAppIcon(Icons.open_in_new_outlined),
+      institutionalAppIcon(Icons.help_outline_sharp),
+      institutionalAppIcon(Icons.chat_bubble_outline),
+      institutionalAppIcon(Icons.qr_code_scanner),
+      institutionalAppIcon(Icons.smart_screen),
+      institutionalAppIcon(Linecons.doc),
+      institutionalAppIcon(Icons.bar_chart_outlined),
+      institutionalAppIcon(Icons.priority_high_outlined),
+      institutionalAppIcon(Icons.apps),
+      institutionalAppIcon(Icons.star_outline_outlined),
+      institutionalAppIcon(Icons.article_outlined),
+      institutionalAppIcon(Icons.logout_outlined),
+      institutionalAppIcon(Icons.markunread_mailbox_outlined),
+      institutionalAppIcon(FontAwesome5.dollar_sign),
+      institutionalAppIcon(FontAwesome5.hourglass_end),
+      institutionalAppIcon(FontAwesome5.hourglass_half),
+      institutionalAppIcon(FontAwesome5.shopping_basket),
+      institutionalAppIcon(FontAwesome5.landmark),
+      institutionalAppIcon(FontAwesome5.calendar_check),
+      institutionalAppIcon(FontAwesome5.calendar_alt),
+      institutionalAppIcon(FontAwesome5.clock),
+      institutionalAppIcon(Icons.share),
+      institutionalAppIcon(Icons.more_vert),
+      institutionalAppIcon(Icons.arrow_back),
+      institutionalAppIcon(Icons.flashlight_off),
+      institutionalAppIcon(Icons.flashlight_on),
+      institutionalAppIcon(Icons.clear),
+      institutionalAppIcon(Icons.fingerprint),
+      institutionalAppIcon(Icons.fingerprint_rounded),
+      institutionalAppIcon(Icons.face_rounded),
+      institutionalAppIcon(Icons.disabled_by_default_outlined),
+      institutionalAppIcon(Icons.cancel),
+      institutionalAppIcon(Icons.delete),
+      institutionalAppIcon(Icons.photo_camera_front),
+      institutionalAppIcon(Icons.play_arrow),
+      institutionalAppIcon(Icons.dvr_sharp),
+      institutionalAppIcon(Icons.people_alt_outlined),
+      institutionalAppIcon(Icons.text_snippet_sharp),
+      institutionalAppIcon(Icons.lock),
+      institutionalAppIcon(Icons.aod_outlined),
+      institutionalAppIcon(Icons.videocam_outlined),
+      institutionalAppIcon(Icons.arrow_forward),
+      institutionalAppIcon(Icons.check_box_outlined),
+      institutionalAppIcon(Icons.refresh),
+      institutionalAppIcon(Icons.camera_alt),
+      institutionalAppIcon(Icons.file_present),
+      institutionalAppIcon(Icons.repeat),
+      institutionalAppIcon(Icons.upload_file),
+      institutionalAppIcon(Icons.format_quote),
+      institutionalAppIcon(Icons.stop),
+      institutionalAppIcon(Icons.circle),
+      institutionalAppIcon(Icons.pause),
+      institutionalAppIcon(Icons.replay),
+      institutionalAppIcon(Icons.mode_outlined),
+      institutionalAppIcon(Icons.stay_current_portrait),
+      institutionalAppIcon(Icons.description_outlined),
+      institutionalAppIcon(Icons.download),
+      institutionalAppIcon(Icons.done),
+      institutionalAppIcon(Icons.star),
+      institutionalAppIcon(Icons.mark_email_read_outlined),
+      institutionalAppIcon(Icons.check),
     ];
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+      margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
       child: GridView.builder(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 3,
           crossAxisSpacing: 8,
           mainAxisSpacing: 8,
@@ -164,9 +152,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
           return GridTile(
               child: CircleAvatar(
-                  backgroundColor: Color(0xff833F4C), child: iconics[index]));
+                  backgroundColor: const Color(0xff833F4C), child: iconic));
         },
       ),
     );
+  }
+
+  Icon institutionalAppIcon(IconData innerIcon) {
+    return Icon(innerIcon, size: iconSize, color: iconColor);
   }
 }

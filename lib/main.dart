@@ -3,6 +3,7 @@ import 'package:fluttericon/elusive_icons.dart';
 import 'package:fluttericon/font_awesome5_icons.dart';
 import 'package:fluttericon/font_awesome_icons.dart';
 import 'package:fluttericon/linecons_icons.dart';
+import 'package:badges/badges.dart';
 
 void main() {
   runApp(const MyApp());

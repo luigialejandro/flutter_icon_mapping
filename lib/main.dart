@@ -150,10 +150,25 @@ class _MyHomePageState extends State<MyHomePage> {
         itemCount: iconics.length,
         itemBuilder: (context, index) {
           final iconic = iconics[index];
+          final nummer = index + 1;
 
           return GridTile(
-              child: CircleAvatar(
-                  backgroundColor: const Color(0xff833F4C), child: iconic));
+              child: Badge(
+            position: BadgePosition.topEnd(top: 0, end: 10),
+            badgeContent: Text(
+              nummer.toString(),
+              style: const TextStyle(color: Colors.white, fontSize: 20),
+            ),
+            badgeStyle: const BadgeStyle(
+              shape: BadgeShape.circle,
+              badgeColor: Color(0xff833F4C),
+              //borderSide: BorderSide(color: Colors.white),
+            ),
+            child: CircleAvatar(
+                radius: 70,
+                backgroundColor: const Color(0xff833F4C),
+                child: iconic),
+          ));
         },
       ),
     );

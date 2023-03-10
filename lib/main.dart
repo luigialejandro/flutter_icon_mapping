@@ -119,6 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
       institutionalAppIcon(Icons.aod_outlined),
       institutionalAppIcon(Icons.videocam_outlined),
       institutionalAppIcon(Icons.arrow_forward),
+      const Icon(Icons.abc, color: Color(0xff833F4C), size: 20),
       institutionalAppIcon(Icons.check_box_outlined),
       institutionalAppIcon(Icons.refresh),
       institutionalAppIcon(Icons.camera_alt),
